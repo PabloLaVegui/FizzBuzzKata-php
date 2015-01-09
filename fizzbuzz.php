@@ -8,6 +8,10 @@ class FizzBuzz
 
     public function checkValue($n)
     {
-        return $n;
+        if ($n % 3 == 0 && $n != 0) {
+            return 'Fizz';
+        } else {
+            return $n;
+        }
     }
 }
