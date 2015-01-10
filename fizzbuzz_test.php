@@ -34,4 +34,9 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('Buzz', $this->fb->checkValue(5));
         $this->assertEquals('Buzz', $this->fb->checkValue(10));
     }
+
+    public function testMultipleOfThreeAndFive()
+    {
+        $this->assertEquals('FizzBuzz', $this->fb->checkValue(15));
+    }
 }

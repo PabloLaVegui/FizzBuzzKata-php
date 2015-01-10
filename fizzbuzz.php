@@ -8,12 +8,22 @@ class FizzBuzz
 
     public function checkValue($n)
     {
-        if ($n % 3 == 0 && $n != 0) {
-            return 'Fizz';
-        } else if ($n % 5 == 0 && $n != 0) {
-            return 'Buzz';
+        $value = '';
+
+        if ($n == 0) {
+            return 0;
         } else {
-            return $n;
+            if ($n % 3 == 0) {
+                $value = $value.'Fizz';
+            }
+            if ($n % 5 == 0) {
+                $value = $value.'Buzz';
+            }
+            if ($value == '') {
+                return $n;
+            }
         }
+
+        return $value;
     }
 }
